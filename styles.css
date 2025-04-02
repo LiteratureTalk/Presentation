@@ -205,7 +205,7 @@ ul li {
     transform: translateY(20px);
     animation: slideUp 0.8s forwards;
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* Changed from center to flex-start to align text at the top */
     justify-content: flex-start;
     width: 100%;
 }
@@ -222,8 +222,8 @@ ul li::before {
     font-size: 1em;
     position: absolute;
     left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0.5em; /* Adjusted to align with the text's baseline */
+    transform: none; /* Removed transform to avoid unnecessary offset */
     animation: pulse 2s infinite;
 }
 
