@@ -205,7 +205,7 @@ ul li {
     transform: translateY(20px);
     animation: slideUp 0.8s forwards;
     display: flex;
-    align-items: flex-start; /* Changed from center to flex-start to align text at the top */
+    align-items: flex-start;
     justify-content: flex-start;
     width: 100%;
 }
@@ -222,8 +222,8 @@ ul li::before {
     font-size: 1em;
     position: absolute;
     left: 0;
-    top: 0.5em; /* Adjusted to align with the text's baseline */
-    transform: none; /* Removed transform to avoid unnecessary offset */
+    top: 0.4em; /* Fine-tuned for even better alignment with the text baseline */
+    transform: none;
     animation: pulse 2s infinite;
 }
 
@@ -250,6 +250,20 @@ ul li::before {
     text-align: center;
     margin-bottom: 40px;
     animation: fadeInUp 1s ease-in-out;
+    line-height: 1.4; /* Reduced line-height for better spacing */
+    padding: 0 20px; /* Added padding to prevent text from touching the edges */
+}
+
+#activity p a {
+    color: #ffd166;
+    text-decoration: none; /* Removed default underline */
+    border-bottom: 2px solid #ffd166; /* Added subtle underline for better visibility */
+    word-break: break-all; /* Ensures the link wraps if too long */
+    transition: border-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#activity p a:hover {
+    border-color: #ff6f61; /* Changes underline color on hover for a nicer look */
 }
 
 .activity-text {
