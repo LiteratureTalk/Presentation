@@ -222,7 +222,7 @@ ul li::before {
     font-size: 1em;
     position: absolute;
     left: 0;
-    top: 0.4em; /* Fine-tuned for even better alignment with the text baseline */
+    top: 0.4em;
     transform: none;
     animation: pulse 2s infinite;
 }
@@ -250,20 +250,20 @@ ul li::before {
     text-align: center;
     margin-bottom: 40px;
     animation: fadeInUp 1s ease-in-out;
-    line-height: 1.4; /* Reduced line-height for better spacing */
-    padding: 0 20px; /* Added padding to prevent text from touching the edges */
+    line-height: 1.4;
+    padding: 0 20px;
 }
 
 #activity p a {
     color: #ffd166;
-    text-decoration: none; /* Removed default underline */
-    border-bottom: 2px solid #ffd166; /* Added subtle underline for better visibility */
-    word-break: break-all; /* Ensures the link wraps if too long */
-    transition: border-color 0.3s ease; /* Smooth transition for hover effect */
+    text-decoration: none;
+    border-bottom: 2px solid #ffd166;
+    word-break: break-all;
+    transition: border-color 0.3s ease;
 }
 
 #activity p a:hover {
-    border-color: #ff6f61; /* Changes underline color on hover for a nicer look */
+    border-color: #ff6f61;
 }
 
 .activity-text {
@@ -437,7 +437,7 @@ ul li::before {
     z-index: 1000;
     opacity: 1;
     animation: fadeOutPlayer 5s forwards;
-    animation-delay: 3s; /* Delay to allow the player to be seen briefly before fading out */
+    animation-delay: 3s;
 }
 
 .soundtrack-player iframe {
@@ -454,6 +454,6 @@ ul li::before {
         opacity: 0;
         height: 0;
         overflow: hidden;
-        pointer-events: none; /* Ensures the player doesn't block interactions after fading out */
+        pointer-events: none;
     }
 }
