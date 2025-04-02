@@ -10,7 +10,6 @@
 </head>
 <body>
     <div class="container">
-        <!-- Soundtrack Embed -->
         <div class="soundtrack-player" style="height: auto; overflow: visible; position: fixed; bottom: 0; left: 0; z-index: 1000;">
             <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" loop="true" style="display: block;" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2065126640&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
             <div style="font-size: 10px; color: #cccccc; line-break: anywhere; word-break: normal; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda, Verdana, Tahoma, sans-serif; font-weight: 100;">
@@ -18,7 +17,6 @@
             </div>
         </div>
 
-        <!-- Intro Slide -->
         <div class="slide" id="intro">
             <div class="intro-bg"></div>
             <div class="intro-overlay"></div>
@@ -26,7 +24,7 @@
                 <div class="title-wrapper">
                     <i class="fas fa-eye title-icon animate__pulse"></i>
                     <h1 class="animate__zoomIn">1984: Minds in Chains</h1>
-                    <p class="subtitle animate__fadeInUp">Orwell’s World of Control and Chaos</p>
+                    <p class="subtitle animate__fadeInUp">Orwell's World of Control and Chaos</p>
                 </div>
                 <div class="button-wrapper">
                     <button class="btn btn-primary animate__bounceIn" onclick="nextSlide()">
@@ -36,7 +34,6 @@
             </div>
         </div>
 
-        <!-- Eye Slide -->
         <div class="slide hidden" id="eye-slide">
             <div class="eye-container">
                 <div class="eye">
@@ -47,14 +44,13 @@
             </div>
         </div>
 
-        <!-- Summary Slide 1 -->
         <div class="slide hidden" id="summary1">
             <h1 class="animate__slideInLeft"><i class="fas fa-book"></i> 1984: The Basics</h1>
             <div class="content-card animate__fadeInUp">
                 <ul>
-                    <li>Oceania’s a mess—Big Brother watches everything, all the time.</li>
-                    <li>Winston Smith fixes history for the Party, but he’s not a fan.</li>
-                    <li>Telescreens are everywhere—good luck hiding your sneaky thoughts!</li>
+                    <li>"Big Brother is watching you." Oceania is under constant surveillance.</li>
+                    <li>Winston Smith rewrites history for the Party but secretly despises it.</li>
+                    <li>Telescreens monitor every move. Privacy is nonexistent.</li>
                 </ul>
             </div>
             <div class="nav-buttons">
@@ -67,14 +63,13 @@
             </div>
         </div>
 
-        <!-- Summary Slide 2 -->
         <div class="slide hidden" id="summary2">
             <h1 class="animate__slideInLeft"><i class="fas fa-book"></i> 1984: The Drama</h1>
             <div class="content-card animate__fadeInUp">
                 <ul>
-                    <li>Winston and Julia sneak some romance—big no-no in this place.</li>
-                    <li>O’Brien plays nice, then stabs them in the back—classic move!</li>
-                    <li>Torture time: Winston meets rats and loses his cool completely.</li>
+                    <li>Winston and Julia start a forbidden romance. "We are the dead."</li>
+                    <li>O'Brien pretends to be an ally but betrays Winston.</li>
+                    <li>Winston faces rats in Room 101 and breaks under torture.</li>
                 </ul>
             </div>
             <div class="nav-buttons">
@@ -87,14 +82,13 @@
             </div>
         </div>
 
-        <!-- Summary Slide 3 -->
         <div class="slide hidden" id="summary3">
             <h1 class="animate__slideInLeft"><i class="fas fa-book"></i> 1984: The Point</h1>
             <div class="content-card animate__fadeInUp">
                 <ul>
-                    <li>Winston’s toast—turns out rebellion’s a tough gig here.</li>
-                    <li>Orwell’s dropping hints: power’s a beast when it runs wild.</li>
-                    <li>Lesson? Don’t let the control freaks win—or we’re all sunk.</li>
+                    <li>Winston is broken. He loves Big Brother.</li>
+                    <li>"Power is not a means; it is an end." Orwell warns of unchecked power.</li>
+                    <li>Freedom requires resistance to oppressive control.</li>
                 </ul>
             </div>
             <div class="nav-buttons">
@@ -107,17 +101,16 @@
             </div>
         </div>
 
-        <!-- Characters Slide -->
         <div class="slide hidden" id="characters">
-            <h1 class="animate__slideInLeft"><i class="fas fa-users"></i> Who’s Who in 1984</h1>
+            <h1 class="animate__slideInLeft"><i class="fas fa-users"></i> Who's Who in 1984</h1>
             <div class="character-container">
                 <div class="character-card animate__fadeInLeft" onclick="jumpToSlide(5)">
                     <img src="https://i.postimg.cc/w1vd91Vc/Flux-Dev-A-highly-detailed-vintage-Orwellian-1984style-headsho-1.jpg" alt="Winston Smith">
-                    <p>Winston Smith: The guy with big dreams</p>
+                    <p>Winston Smith: A dreamer seeking freedom</p>
                 </div>
                 <div class="character-card animate__fadeInRight" onclick="jumpToSlide(9)">
                     <img src="https://i.postimg.cc/p95bn33m/Flux-Dev-A-highly-detailed-vintage-Orwellian-1984style-headsho-2.jpg" alt="O'Brien">
-                    <p>O’Brien: The master of mean tricks</p>
+                    <p>O'Brien: A cunning Party loyalist</p>
                 </div>
             </div>
             <div class="nav-buttons">
@@ -130,14 +123,13 @@
             </div>
         </div>
 
-        <!-- Winston Slide 1 -->
         <div class="slide hidden" id="winston1">
-            <h1 class="animate__slideInLeft"><i class="fas fa-brain"></i> Winston’s Secret Thoughts</h1>
+            <h1 class="animate__slideInLeft"><i class="fas fa-brain"></i> Winston's Secret Thoughts</h1>
             <div class="content-card animate__fadeInUp">
                 <ul>
-                    <li>Winston’s mind is a rebel hideout—he writes “DOWN WITH BIG BROTHER” in his diary, a risky move that shows his desperate need to feel free.</li>
-                    <li>It’s his only escape while he’s stuck changing history for the Party’s lies, a job that makes him feel like he’s losing his humanity every day.</li>
-                    <li>Orwell shows us Winston’s fear—he’s always looking over his shoulder, scared of getting caught, his heart racing at every sound.</li>
+                    <li>"DOWN WITH BIG BROTHER." Winston writes in his diary.</li>
+                    <li>His job at the Ministry of Truth erodes his humanity.</li>
+                    <li>"Thoughtcrime does not entail death: thoughtcrime IS death."</li>
                 </ul>
             </div>
             <div class="nav-buttons">
@@ -150,14 +142,13 @@
             </div>
         </div>
 
-        <!-- Winston Slide 2 -->
         <div class="slide hidden" id="winston2">
-            <h1 class="animate__slideInLeft"><i class="fas fa-theater-masks"></i> Winston’s Love Story</h1>
+            <h1 class="animate__slideInLeft"><i class="fas fa-theater-masks"></i> Winston's Love Story</h1>
             <div class="content-card animate__fadeInUp">
                 <ul>
-                    <li>He whispers “We are the dead” to Julia—their secret love feels like a tiny win against the Party, a rare moment where Winston feels truly alive.</li>
-                    <li>Orwell paints Winston’s joy in small things—like the smell of real coffee or the dusty room where he and Julia hide, dreaming of a normal life.</li>
-                    <li>But there’s always dread—Winston knows deep down this happiness won’t last, and Orwell makes us feel his quiet panic as the Party closes in.</li>
+                    <li>"We are the dead." Winston and Julia defy the Party.</li>
+                    <li>Real coffee and a dusty room bring Winston joy.</li>
+                    <li>Winston fears the Party will destroy their love.</li>
                 </ul>
             </div>
             <div class="nav-buttons">
@@ -170,14 +161,13 @@
             </div>
         </div>
 
-        <!-- Winston Slide 3 -->
         <div class="slide hidden" id="winston3">
-            <h1 class="animate__slideInLeft"><i class="fas fa-heart-broken"></i> Winston’s Big Fall</h1>
+            <h1 class="animate__slideInLeft"><i class="fas fa-heart-broken"></i> Winston's Big Fall</h1>
             <div class="content-card animate__fadeInUp">
                 <ul>
-                    <li>Rats in Room 101 break him—he screams “Do it to Julia!” and betrays his last hope, his voice cracking as he gives in to pure terror.</li>
-                    <li>Orwell shows the torture’s toll—Winston’s body is frail, his mind shattered; he’s a shell of the man who once dared to dream of freedom.</li>
-                    <li>His thoughts stop fighting—he ends up thinking “He loved Big Brother,” a hollow victory for the Party that leaves Winston utterly defeated.</li>
+                    <li>"Do it to Julia!" Winston betrays his love in Room 101.</li>
+                    <li>Torture leaves Winston a broken shell of a man.</li>
+                    <li>"He loved Big Brother." The Party wins.</li>
                 </ul>
             </div>
             <div class="nav-buttons">
@@ -190,14 +180,13 @@
             </div>
         </div>
 
-        <!-- Winston Slide 4 -->
         <div class="slide hidden" id="winston4">
-            <h1 class="animate__slideInLeft"><i class="fas fa-eye-slash"></i> Winston’s Lost Spark</h1>
+            <h1 class="animate__slideInLeft"><i class="fas fa-eye-slash"></i> Winston's Lost Spark</h1>
             <div class="content-card animate__fadeInUp">
                 <ul>
-                    <li>Before the fall, Winston dreamed of rebellion—“If there is hope, it lies in the proles,” he thought, clinging to a flicker of optimism.</li>
-                    <li>But Orwell shows how the Party wins—Winston’s hope fades, he stops caring about truth, his spirit crushed under the weight of control.</li>
-                    <li>By the end, he’s a ghost of himself, sipping gin at the Chestnut Tree Café, staring blankly, a broken man with nothing left to fight for.</li>
+                    <li>"If there is hope, it lies in the proles." Winston's early optimism.</li>
+                    <li>The Party crushes his hope and spirit.</li>
+                    <li>Winston ends broken at the Chestnut Tree Café.</li>
                 </ul>
             </div>
             <div class="nav-buttons">
@@ -205,19 +194,18 @@
                     <i class="fas fa-arrow-left"></i> Back
                 </button>
                 <button class="btn btn-primary animate__fadeInRight" onclick="nextSlide()">
-                    <i class="fas fa-arrow-right"></i> O’Brien
+                    <i class="fas fa-arrow-right"></i> O'Brien
                 </button>
             </div>
         </div>
 
-        <!-- O'Brien Slide 1 -->
         <div class="slide hidden" id="obrien1">
-            <h1 class="animate__slideInLeft"><i class="fas fa-mask"></i> O’Brien’s Mystery</h1>
+            <h1 class="animate__slideInLeft"><i class="fas fa-mask"></i> O'Brien's Mystery</h1>
             <div class="content-card animate__fadeInUp">
                 <ul>
-                    <li>We never hear O’Brien’s thoughts—he says “You will be hollow” with a creepy smile, his voice calm but dripping with menace.</li>
-                    <li>Orwell makes him a mystery—his face is calm, almost fatherly, but his eyes are cold, hinting at a darkness that chills Winston to the bone.</li>
-                    <li>He seems like a friend at first, giving Winston hope with talk of rebellion—total fake-out that makes the betrayal hit even harder.</li>
+                    <li>"You will be hollow." O'Brien's chilling promise to Winston.</li>
+                    <li>His fatherly face hides a cold and dark intent.</li>
+                    <li>O'Brien offers false hope of rebellion to Winston.</li>
                 </ul>
             </div>
             <div class="nav-buttons">
@@ -230,14 +218,13 @@
             </div>
         </div>
 
-        <!-- O'Brien Slide 2 -->
         <div class="slide hidden" id="obrien2">
-            <h1 class="animate__slideInLeft"><i class="fas fa-crown"></i> O’Brien’s Power Trip</h1>
+            <h1 class="animate__slideInLeft"><i class="fas fa-crown"></i> O'Brien's Power Trip</h1>
             <div class="content-card animate__fadeInUp">
                 <ul>
-                    <li>“Power is in tearing human minds to pieces,” he brags—O’Brien loves control, and Orwell makes us feel his glee in breaking people.</li>
-                    <li>He tortures Winston with no emotion, like he’s just doing a boring job, his hands steady as he turns Winston’s mind inside out.</li>
-                    <li>Orwell shows O’Brien’s loyalty—he’s all in for the Party, no doubts ever, a true believer who lives for the Party’s twisted goals.</li>
+                    <li>"Power is in tearing human minds to pieces."</li>
+                    <li>O'Brien tortures Winston with cold precision.</li>
+                    <li>His loyalty to the Party is absolute.</li>
                 </ul>
             </div>
             <div class="nav-buttons">
@@ -250,14 +237,13 @@
             </div>
         </div>
 
-        <!-- O'Brien Slide 3 -->
         <div class="slide hidden" id="obrien3">
-            <h1 class="animate__slideInLeft"><i class="fas fa-eye-slash"></i> O’Brien’s Final Word</h1>
+            <h1 class="animate__slideInLeft"><i class="fas fa-eye-slash"></i> O'Brien's Final Word</h1>
             <div class="content-card animate__fadeInUp">
                 <ul>
-                    <li>“The Party seeks power… for its own sake,” he says—O’Brien’s all about domination, and Orwell makes us feel his cold, unfeeling resolve.</li>
-                    <li>He doesn’t care about people—just wants to win, no matter what, his voice steady as he explains the Party’s endless hunger for control.</li>
-                    <li>Orwell makes him the Party’s perfect soldier—cold, smart, and unstoppable, a man who’s more machine than human in his loyalty.</li>
+                    <li>"The Party seeks power for its own sake."</li>
+                    <li>O'Brien feels no empathy, only a need to dominate.</li>
+                    <li>He's the Party's perfect soldier: cold and unyielding.</li>
                 </ul>
             </div>
             <div class="nav-buttons">
@@ -270,14 +256,13 @@
             </div>
         </div>
 
-        <!-- O'Brien Slide 4 -->
         <div class="slide hidden" id="obrien4">
-            <h1 class="animate__slideInLeft"><i class="fas fa-brain"></i> O’Brien’s Mind Games</h1>
+            <h1 class="animate__slideInLeft"><i class="fas fa-brain"></i> O'Brien's Mind Games</h1>
             <div class="content-card animate__fadeInUp">
                 <ul>
-                    <li>“We control life, Winston, at all its levels,” he says—O’Brien knows every trick, and Orwell shows us his terrifying intelligence.</li>
-                    <li>He toys with Winston’s hope, making him believe in a fake rebellion, his words smooth and calculated to build trust before the fade.</li>
-                    <li>Orwell shows O’Brien’s smarts—he’s always ten steps ahead, a pure evil genius who enjoys watching Winston’s spirit break piece by piece.</li>
+                    <li>"We control life, Winston, at all its levels."</li>
+                    <li>O'Brien manipulates Winston's hope with a fake rebellion.</li>
+                    <li>His intelligence makes him a terrifying opponent.</li>
                 </ul>
             </div>
             <div class="nav-buttons">
@@ -290,11 +275,9 @@
             </div>
         </div>
 
-        <!-- Final Activity Slide -->
         <div class="slide hidden" id="activity">
-            <h1 class="animate__slideInLeft"><i class="fas fa-link"></i> Keep Learning!</h1>
+            <h1 class="animate__slideInLeft"><i class="fas fa-link"></i> Keep Learning</h1>
             <div class="content-card animate__fadeInUp">
-                <p>Visit this website now to practice what you’ve learned with an activity:</p>
                 <p class="activity-text">https://literaturestudentversion.netlify.app/</p>
             </div>
             <div class="nav-buttons">
